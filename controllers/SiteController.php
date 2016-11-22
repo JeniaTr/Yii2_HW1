@@ -112,7 +112,6 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
-
     /**
      * Displays about page.
      *
@@ -122,4 +121,15 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * @param string $massage
+     * @return string
+     */
+    public function actionHello($massage='111 hello 111')
+    {
+        return $this->render('hello',
+            array('massage' => $massage));
+    }
+
 }
