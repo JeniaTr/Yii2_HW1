@@ -8,7 +8,7 @@
 
 namespace app\models;
 
-
+use yii;
 use yii\base\Model;
 
 class MyForm extends Model
